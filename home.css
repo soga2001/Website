@@ -1,0 +1,202 @@
+body
+{
+	background-color: lightblue;
+  height: 100%;
+
+}
+#main-content
+{
+	/*background-image: url("galaxy.jpg");*/
+	background-color: lightcyan;
+	margin-bottom: 10%;
+
+
+}
+#aboutMe
+{
+	font-size: 50px;
+	text-align: center;
+}
+#first
+{
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+#location
+{
+  background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2001a-m-2000x1500_0.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+
+.location
+{
+  text-align: center;
+}
+#logo
+{
+  margin: 1%;
+  width: 3%;
+
+
+}
+
+.outer
+{
+    display:table;
+    width:100%;
+    height:100%;
+}
+
+footer
+{
+  text-align: center;
+  background-color: black;
+  margin-bottom: 0px;
+  line-height: 5%;
+  position: absolute;
+}
+
+.foot
+{
+  display: table-row;
+}
+
+.copy
+{
+  color: white;
+  padding: .5%;
+}
+
+.myPicture
+{
+	/*height: 100%;
+	margin-left: 30px;
+	margin-right: 30px;*/
+	width: 100%;
+	border: 3px solid black;
+}
+
+.pictures
+{
+	border: 3px solid black;
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+h2
+{
+	font-family: Comic Sans MS, curve , sans-serif;
+}
+P
+{
+	font-family: Comic Sans MS, curve , sans-serif;
+	text-indent: 3.0em;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 10px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: gray;
+}
+
+/*Got this code from w3schools*/
+#nepalMap {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+#nepalMap:hover {opacity: 0.7;}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px;
+  padding-left: 500px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}	
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding-top: 10px;
+  padding-right: 490px;
+  height: 200px;
+}
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+

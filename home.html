@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suyogya Poudel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./home.css" type="text/css">
+</head>
+<body>
+  <div class="outer">
+  <button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">My Personal Website</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hobbies<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hobbies</a></li>
+            <li><a href="#">Past and Future</a></li>
+            <li><a href="#">Dream</a></li>
+          </ul>
+        </li>-->
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="future.html">Future</a></li>
+      </ul>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>-->
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <!--<h3>About me</h3>
+  <p>Hi, my name is Suyogya Poudel. I was born in Nepal and moved and moved to the U.S. when I was 11.</p>
+</div>-->
+  <div class="row">
+        <div class="col-md-9" id="main-content" id="Top">
+          <section><h2 id="aboutMe"><strong>About Me</strong></h2>
+
+            <img class="myPicture" src="Poudel.jpg" alt="Picture of the author wearing traditional Nepali clothing">
+            <p id="first">Hi, my name is Suyogya Poudel. I was born in June 22, 2001 in Pokhara, Nepal. I don't remember much from my childhood because I moved to the U.S. when I was only 11. But what I do remember is that ever since I was a kid, I thought I would become a docotor until junior year of high school, when I took my first computer science class. I also took a web development class for a semester in junior year. As I continued to code and learn programming languages, I came to realize that whenever I am coding, I lose track of time. I always thought my job should be something I enjoy and not something I have to suffer through and thus decided to study computer science.</p></section>
+            <!--<img id="pictures" src="Flag.png" width="100%" border="3px solid black">-->
+          
+        </div>
+          <div class="col-md-3 col-xs-6" id="location">
+            <h2 id="location"><strong>Where is Nepal?</strong></h2>
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-contant" id="img01">
+
+              <div id="caption"></div>
+            </div>
+            <img id="nepalMap" alt="Map of Nepal" class="pictures" src="https://res.cloudinary.com/fen-learning/image/upload/c_limit,w_508,h_282/infopls_images/images/mnepal.gif">
+            <p>Nepal is located in Asia. A small country between China and India which is known for its mountains. Nepal has the tallest mountain the world, Mount Everest and well as 7 other mountains which are in the list of the top 10 tallest mountains in the world.</p>
+          </div>
+          <div class=" col-md-3 col-xs-6" id="family">
+
+          </div>
+          
+        </div>
+      
+      </div> 
+      <div>
+      <footer>
+        <address>
+          <div class="copy">2020 &copy All Rights Reserved</div>
+        <a href="https://www.instagram.com/suyogya_poudel/" target="_blank">
+          <img id="logo" src="instaLogo.png"><div class="foot"></div></a>
+        <a href="https://www.facebook.com/suyogya.poudel" target="_blank">
+          <img id="logo" src="faceLogo.png"><div class="foot"></div></a>
+          <a href="https://github.com/soga2001" target="_blank"> 
+            <img id="logo" src="gitLogo.png"><div class="foot"></div></a>
+          <a href="mailto: suyogya.poudel@colorado.edu"> <img id="logo" src="emailLogo.png"><div class="foot"></div></a>
+
+        </address>
+      </footer>
+      </div>
+  </div>
+
+
+      <!--JavaScript-->
+          <script>
+                  //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+            {
+               mybutton.style.display = "block";
+            } 
+           else 
+           {
+               mybutton.style.display = "none";
+            }
+            }
+
+                  // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+                  }
+          </script>
+          <script>
+          var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("nepalMap");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+          </script>
+
+
+          
+
+</body>
+</html>

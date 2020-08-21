@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suyogya Poudel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./future.css" type="text/css">
+</head>
+<body>
+  <div class="outer">
+  <button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="home.html">My Personal Website</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="home.html">Home</a></li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hobbies<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hobbies</a></li>
+            <li><a href="#">Past and Future</a></li>
+            <li><a href="#">Dream</a></li>
+          </ul>
+        </li>-->
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li class="active"><a href="#">Future</a></li>
+      </ul>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>-->
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <!--<h3>About me</h3>
+  <p>Hi, my name is Suyogya Poudel. I was born in Nepal and moved and moved to the U.S. when I was 11.</p>
+</div>-->
+<div class="row">
+        <div class="col-md-9" id="main-content" id="Top">
+          <section id="jumbotron"><h2 id="aboutMe"><strong>Future Hopes and Dreams</strong></h2>
+            <img id="pictures" src="" width="100%" height="300px ">
+            <img class="myPicture" src="" width="100%" height="300px">
+          <p id="first">In the future, I hope to expand my knowledge on computer science.</p></section>
+        </div>
+          <div class="col-md-3" id="sidebar">
+            <h2 id="history"><strong>Location</strong></h2>
+            <img id="pictures" src="" width="100%" height="200px">
+            <p>Nepal is located in Asia. A small country known for the tallest mountain the world, Mount Everest. It also has 8 of the top 10 tallest mountains in the world.</p>
+          </div>
+      
+      </div> 
+    </div>
+      <div>
+          <footer>
+            <address>
+              <div class="copy">2020 &copy All Rights Reserved</div>
+            <a href="https://www.instagram.com/suyogya_poudel/" target="_blank">
+              <img id="logo" src="instaLogo.png"><div class="foot"></div></a>
+            <a href="https://www.facebook.com/suyogya.poudel" target="_blank">
+              <img id="logo" src="faceLogo.png"><div class="foot"></div></a>
+              <a href="https://github.com/soga2001" target="_blank"> 
+            <img id="logo" src="gitLogo.png"><div class="foot"></div></a>
+              <a href="mailto: suyogya.poudel@colorado.edu"> <img id="logo" src="emailLogo.png"><div class="foot"></div></a>
+            </address>
+          </footer>
+        </div>
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+</script>
+</div>
+
+</body>
+</html>
