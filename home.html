@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="outer">
-  <button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
+  <button onclick="topFunction()" id="toTop" title="Back to top"><strong>Back to Top</strong></button>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -54,13 +54,19 @@
         <div class="col-md-9" id="main-content" id="Top">
           <section><h2 id="aboutMe"><strong>About Me</strong></h2>
 
-            <img class="myPicture" src="Poudel.jpg" alt="Picture of the author wearing traditional Nepali clothing">
+            
+            <div>
+              <img class="myPicture" id="cultural" src="Poudel.jpg" alt="Picture of author wearing traditional Nepali clothing">
+              <img class="myPicture" src="Pic.jpg">
+              <img class="myPicture" src="myPic.jpg">
+            </div>
             <p id="first">Hi, my name is Suyogya Poudel. I was born in June 22, 2001 in Pokhara, Nepal. I don't remember much from my childhood because I moved to the U.S. when I was only 11. But what I do remember is that ever since I was a kid, I thought I would become a docotor until junior year of high school, when I took my first computer science class. I also took a web development class for a semester in junior year. As I continued to code and learn programming languages, I came to realize that whenever I am coding, I lose track of time. I always thought my job should be something I enjoy and not something I have to suffer through and thus decided to study computer science.</p></section>
             <!--<img id="pictures" src="Flag.png" width="100%" border="3px solid black">-->
           
         </div>
-          <div class="col-md-3 col-xs-6" id="location">
-            <h2 id="location"><strong>Where is Nepal?</strong></h2>
+          <div class="col-md-3" id="location">
+            <section><h2><strong>Where is Nepal?</strong></h2>
+
             <div id="myModal" class="modal">
               <span class="close">&times;</span>
               <img class="modal-contant" id="img01">
@@ -68,9 +74,12 @@
               <div id="caption"></div>
             </div>
             <img id="nepalMap" alt="Map of Nepal" class="pictures" src="https://res.cloudinary.com/fen-learning/image/upload/c_limit,w_508,h_282/infopls_images/images/mnepal.gif">
-            <p>Nepal is located in Asia. A small country between China and India which is known for its mountains. Nepal has the tallest mountain the world, Mount Everest and well as 7 other mountains which are in the list of the top 10 tallest mountains in the world.</p>
+            <p>Nepal is located in Asia. A small country between China and India which is known for its mountains. Nepal has the tallest mountain the world, Mount Everest and well as 7 other mountains which are in the list of the top 10 tallest mountains in the world.</p></section>
           </div>
-          <div class=" col-md-3 col-xs-6" id="family">
+          <div class=" col-md-3" id="family">
+            <section><h2><strong>Family</strong></h2>
+              <p>
+              </p></section>
 
           </div>
           
@@ -98,7 +107,7 @@
       <!--JavaScript-->
           <script>
                   //Get the button
-            var mybutton = document.getElementById("myBtn");
+            var mybutton = document.getElementById("toTop");
 
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function() {scrollFunction()};
@@ -141,6 +150,22 @@
               modal.style.display = "none";
             }
           </script>
+          <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("myPicture");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+            </script>
 
 
           

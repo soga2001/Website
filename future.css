@@ -1,6 +1,20 @@
 body
 {
-	background-color: lightblue;
+  background-color: black;
+  height: 100%;
+
+}
+.container-fluid
+{
+}
+ul
+{
+  font-size: 20px;
+  font-family: Comic Sans MS, curve , sans-serif;
+}
+li
+{
+  font-size: 12px;
 }
 #main-content
 {
@@ -26,6 +40,11 @@ body
 
 }
 
+#logo:hover
+{
+  opacity: .3;
+}
+
 .outer
 {
     display:table;
@@ -37,10 +56,10 @@ footer
 {
   text-align: center;
   background-color: black;
-  margin-bottom: 0px;
 
   line-height: 5%;
   position: absolute;
+  border: 3px solid white;
 }
 
 .foot
@@ -76,21 +95,21 @@ p
 {
 	text-indent: 3.0em;
 }
-#myBtn {
+#toTop {
+  color: white;
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 1%;
+  right:  1%;
   z-index: 99;
-  font-size: 10px;
-  border: 3px solid white;
-  outline: green;
-  background-color: black;
-  color: white;
+  outline: none;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
-  padding: 15px;
+  padding: 5px;
   border-radius: 4px;
+  border-style: double;
 }
-#myBtn:hover {
-  background-color: gray;
+#toTop:hover {
+  background-color: transparent;
 }	

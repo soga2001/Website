@@ -1,24 +1,40 @@
 body
 {
-	background-color: lemonchiffon;
-	color: black;
+	background-color: black;
+  /*The background image was taken by my brother, Sushanta Poudel*/
+  background-image: url("butterfly.jpg");
+  background-size: cover;
+	color: white;
 }
 h3, h2
 {
 	font-family: Comic Sans MS, curve , sans-serif;
+  font-size: 20px;
 }
 p
 {
 	font-family: Comic Sans MS, curve , sans-serif;
+  font-size: 20px;
 }
 ul
 {
-	font-size: 15px;
+	font-size: 20px;
 	font-family: Comic Sans MS, curve , sans-serif;
 }
+li
+{
+  font-size: 13px;
+}
+
 #main-content
 {
-	background-color: tan;
+	background-color: transparent;
+  padding: 10px;
+  font-weight: bold;
+}
+.row
+{
+  background-color: transparent;
 }
 #aboutMe
 {
@@ -37,6 +53,15 @@ ul
 	width: 47%;
 	border: 3px solid black;
 }
+.balls
+{
+  display: fixed;
+  margin-right: 1%;
+  height: 100%;
+  width: 41%;
+  border: 3px solid black;
+}
+
 #aboutMe
 {
 	text-align: center;
@@ -44,49 +69,47 @@ ul
 
 #book
 {
-  background-color: mistyrose;
-  height: 450px;
+
+  height: relative;
+
 }
 
 #webcomic
 {
-  background-color: powderblue;
-  height: 450px;
+  height: relative;
+
 }
 
 #anime
 {
-  background-color: mistyrose;
-  height: 450px;
+
+  height: relative;
+
 }
 #drama
 {
-  background-color: powderblue;
-  height: 450px;
+  height: relative;
 }
 
 #Nepali
 {
-  background-color: powderblue;
-  height: 450px;
+  height: relative;
 }
 
 #Indian
 {
-  background-color: mistyrose;
-  height: 450px;
+  height: relative;
+
 }
 
 #game
 {
-  background-color: powderblue;
-  height: 450px;
+  height: relative;
 }
 
 #sport
 {
-  background-color: mistyrose;
-  height: 450px;
+  height: relative;
 }
 
 
@@ -96,6 +119,10 @@ ul
   margin: 1%;
   width: 3%;
 
+}
+#logo:hover
+{
+  opacity: .3;
 }
 
 .outer
@@ -109,7 +136,6 @@ footer
 {
   text-align: center;
   background-color: black;
-  margin-bottom: 0px;
   line-height: 5%;
   position: absolute;
 }
@@ -125,32 +151,24 @@ footer
   padding: .5%;
 }
 
-#balls
-{
-	display: fixed;
-	margin-right: 1%;
-	height: 100%;
-	width: 47%;
-	border: 3px solid black;
-}
-#myBtn {
+
+#toTop {
+  color: white;
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 1%;
+  right:  1%;
   z-index: 99;
-  font-size: 10px;
-  border: none;
   outline: none;
-  background-color: black;
-  color: white;
-  border: 3px solid white;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
-  padding: 15px;
+  padding: 5px;
   border-radius: 4px;
+  border-style: double;
 }
-#myBtn:hover {
-  background-color: gray;
+#toTop:hover {
+  background-color: transparent;
 }
 .container
 {
