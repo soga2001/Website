@@ -2,13 +2,27 @@ body
 {
   /*Background Picture was taken by my brother*/
   background-image: url("sunrise.jpg");
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 
-
 }
-.container-fluid
+
+.navbar-custom 
+{ 
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+}
+.active
 {
+  opacity: .8;
+}
+
+#date
+{
+  color: white;
 }
 ul
 {
@@ -18,10 +32,10 @@ ul
 li
 {
   font-size: 12px;
+  color: white;
 }
 #main-content
 {
-	/*background-image: url("galaxy.jpg");*/
 	margin-bottom: 10%;
   color: white;
 
@@ -51,8 +65,6 @@ li
   background-repeat: no-repeat;
   background-size: 100% 100%;*/
   color: white;
-  border: 5px solid red;
-  border-style: double;
   height: relative;
 }
 
@@ -63,22 +75,21 @@ li
 
 #family
 {
-  margin-top: 1%;
+  margin-bottom: 10%;
   color: white;
-  border: 5px solid white;
-  border-style: double;
 
 }
 #logo
 {
   margin: 1%;
   width: 3%;
+  opacity: .7;
 
 
 }
 #logo:hover
 {
-  opacity: .3;
+  opacity: 1;
 }
 
 .outer
@@ -90,10 +101,11 @@ li
 
 footer
 {
+  margin-top: 200px;
   text-align: center;
-  background-color: black;
-  line-height: 5%;
+  background-color: transparent;
   position: absolute;
+  padding: 5px;
 }
 
 .foot
@@ -114,12 +126,12 @@ footer
 	margin-right: 30px;*/
 	width: 100%;
   height: relative;
-	border: 3px solid black;
+	border: 4px groove gray;
 }
 
 .pictures
 {
-	border: 3px solid black;
+	border: 4px double white;
 	display: block;
 	position: relative;
 	width: 100%;
@@ -155,51 +167,55 @@ P
 }
 
 
-/*Got this code from w3schools*/
+/*Lenared this from w3schools.com*/
 #nepalMap {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-
 }
+
 #nepalMap:hover {opacity: 0.7;}
 
+
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 200px;
-  padding-left: 500px;
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  margin-left: auto;
-  margin-right: auto;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}	
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9); 
+}
 
+/* Modal Content */
 .modal-content {
   margin: auto;
   display: block;
-  width: 100%;
-  max-width: 700px;
+  width: 80%;
+  max-width: 840px;
+
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
+/* Modal Caption */
 #caption {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
-  padding-top: 10px;
-  padding-right: 490px;
-  height: 200px;
+  color: white;
+  padding: 10px 0;
+  height: 150px;
 }
-.modal-content, #caption {
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -210,7 +226,7 @@ P
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
+  from {transform:scale(0)} 
   to {transform:scale(1)}
 }
 
@@ -219,7 +235,7 @@ P
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: white;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -227,7 +243,7 @@ P
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
@@ -237,5 +253,5 @@ P
   .modal-content {
     width: 100%;
   }
-}
+} 
 

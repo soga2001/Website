@@ -3,6 +3,8 @@ body
 	background-color: black;
   /*The background image was taken by my brother, Sushanta Poudel*/
   background-image: url("butterfly.jpg");
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
 	color: white;
 }
@@ -25,7 +27,17 @@ li
 {
   font-size: 13px;
 }
-
+#nav
+{
+  background-color: transparent;
+  color: black;
+  border: none;
+  text-align: center;
+}
+.active
+{
+  opacity: .5;
+}
 #main-content
 {
 	background-color: transparent;
@@ -51,7 +63,7 @@ li
 	display: fixed;
 	margin-left: 3%;
 	width: 47%;
-	border: 3px solid black;
+	border: 3px double white;
 }
 .balls
 {
@@ -59,7 +71,7 @@ li
   margin-right: 1%;
   height: 100%;
   width: 41%;
-  border: 3px solid black;
+  border: 3px double white;
 }
 
 #aboutMe
@@ -118,11 +130,12 @@ li
 {
   margin: 1%;
   width: 3%;
+  opacity: .7;
 
 }
 #logo:hover
 {
-  opacity: .3;
+  opacity: 1;
 }
 
 .outer
@@ -134,10 +147,12 @@ li
 
 footer
 {
+  margin-top: 200px;
   text-align: center;
-  background-color: black;
+  background-color: transparent;
   line-height: 5%;
   position: absolute;
+  padding: .5%;
 }
 
 .foot
@@ -168,9 +183,9 @@ footer
   border-style: double;
 }
 #toTop:hover {
-  background-color: transparent;
+  opacity: .7;
 }
 .container
 {
-	padding-bottom: 100px;
+	padding-bottom: 1%;
 }

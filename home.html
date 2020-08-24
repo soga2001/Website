@@ -5,16 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./home.css" type="text/css">
 </head>
 <body>
-  <div class="outer">
   <button onclick="topFunction()" id="toTop" title="Back to top"><strong>Back to Top</strong></button>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-custom" id="nav">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -35,13 +33,14 @@
             <li><a href="#">Dream</a></li>
           </ul>
         </li>-->
-        <li><a href="hobbies.html">Hobbies</a></li>
+        <li class=".nav"><a href="hobbies.html">Hobbies</a></li>
         <li><a href="future.html">Future</a></li>
       </ul>
-      <!--<ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>-->
+      <ul class="nav navbar-nav navbar-right">
+        <li><p id="date"> </p></li>
+        <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul>
     </div>
   </div>
 </nav>
@@ -50,9 +49,10 @@
   <!--<h3>About me</h3>
   <p>Hi, my name is Suyogya Poudel. I was born in Nepal and moved and moved to the U.S. when I was 11.</p>
 </div>-->
+
   <div class="row">
         <div class="col-md-9" id="main-content" id="Top">
-          <section><h2 id="aboutMe"><strong>About Me</strong></h2>
+          <section><h2 id="aboutMe"><strong>About Me Date</strong> </h2>
 
             
             <div>
@@ -66,14 +66,14 @@
         </div>
           <div class="col-md-3" id="location">
             <section><h2><strong>Where is Nepal?</strong></h2>
+              <img id="nepalMap" alt="Map of Nepal" class="pictures" src="nepalMap.jpg"><!-- I got this map from https://www.nationsonline.org/oneworld/map/nepal-administrative-map.htm-->
 
-            <div id="myModal" class="modal">
+            <div id="modal" class="modal">
               <span class="close">&times;</span>
-              <img class="modal-contant" id="img01">
-
+              <img class="modal-content" id="img01">
               <div id="caption"></div>
             </div>
-            <img id="nepalMap" alt="Map of Nepal" class="pictures" src="https://res.cloudinary.com/fen-learning/image/upload/c_limit,w_508,h_282/infopls_images/images/mnepal.gif">
+            
             <p>Nepal is located in Asia. A small country between China and India which is known for its mountains. Nepal has the tallest mountain the world, Mount Everest and well as 7 other mountains which are in the list of the top 10 tallest mountains in the world.</p></section>
           </div>
           <div class=" col-md-3" id="family">
@@ -101,7 +101,7 @@
         </address>
       </footer>
       </div>
-  </div>
+
 
 
       <!--JavaScript-->
@@ -130,7 +130,8 @@
                   }
           </script>
           <script>
-          var modal = document.getElementById("myModal");
+            // Get the modal
+            var modal = document.getElementById("modal");
 
             // Get the image and insert it inside the modal - use its "alt" text as a caption
             var img = document.getElementById("nepalMap");
@@ -149,7 +150,7 @@
             span.onclick = function() { 
               modal.style.display = "none";
             }
-          </script>
+            </script>
           <script>
             var myIndex = 0;
             carousel();
@@ -165,6 +166,10 @@
               x[myIndex-1].style.display = "block";  
               setTimeout(carousel, 3000); // Change image every 2 seconds
             }
+            </script>
+            <script>
+            var d = new Date();
+            document.getElementById("date").innerHTML = d;
             </script>
 
 

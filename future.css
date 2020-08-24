@@ -1,8 +1,23 @@
 body
-{
-  background-color: black;
-  height: 100%;
+{background-color: black;
+  /*The background image was taken by my brother, Sushanta Poudel*/
+  background-image: url("flamingo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
 
+}
+#nav
+{
+  background-color: transparent;
+  color: black;
+  border: none;
+  text-align: center;
+}
+.active
+{
+  opacity: .5;
 }
 .container-fluid
 {
@@ -19,7 +34,6 @@ li
 #main-content
 {
 	/*background-image: url("galaxy.jpg");*/
-	background-color: lightgray;
 	margin-bottom: 200px;
 }
 #aboutMe
@@ -37,12 +51,13 @@ li
 {
   margin: 1%;
   width: 3%;
+  opacity: .7;
 
 }
 
 #logo:hover
 {
-  opacity: .3;
+  opacity: 1;
 }
 
 .outer
@@ -54,12 +69,10 @@ li
 
 footer
 {
+  margin-top: 200px;
   text-align: center;
-  background-color: black;
+  background-color: transparent;
 
-  line-height: 5%;
-  position: absolute;
-  border: 3px solid white;
 }
 
 .foot
@@ -111,5 +124,5 @@ p
   border-style: double;
 }
 #toTop:hover {
-  background-color: transparent;
+  opacity: .7;
 }	
