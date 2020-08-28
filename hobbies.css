@@ -8,36 +8,59 @@ body
   background-size: cover;
 	color: white;
 }
+#myLogo
+{
+  border-radius: 50%;
+}
+
+/*.active {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 20px #fff, 0 0 30px #c41414, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 60px #e60073, 0 0 60px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 30px #fff, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6, 0 0 900px #ff4da6;
+  }
+}*/
+
 h3, h2
 {
 	font-family: Comic Sans MS, curve , sans-serif;
   font-size: 20px;
+  color: relative;
 }
 p
 {
 	font-family: Comic Sans MS, curve , sans-serif;
-  font-size: 20px;
+  font-size: 17px;
 }
 ul
 {
 	font-size: 20px;
 	font-family: Comic Sans MS, curve , sans-serif;
 }
-li
+li, ol
 {
-  font-size: 13px;
+  font-size: 15px;
+  font-family: Comic Sans MS, curve , sans-serif;
 }
-#nav
+
+.navbar-custom 
 {
-  background-color: transparent;
-  color: black;
-  border: none;
-  text-align: center;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  text-shadow: 1px 1px black;
 }
-.active
-{
-  opacity: .5;
-}
+
 #main-content
 {
 	background-color: transparent;
@@ -128,7 +151,8 @@ li
 
 #logo
 {
-  margin: 1%;
+  margin-top: 2%;
+  margin-right: 3%;
   width: 3%;
   opacity: .7;
 
@@ -150,7 +174,6 @@ footer
   margin-top: 200px;
   text-align: center;
   background-color: transparent;
-  line-height: 5%;
   position: absolute;
   padding: .5%;
 }

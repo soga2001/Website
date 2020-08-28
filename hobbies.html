@@ -2,18 +2,70 @@
 <html lang="en">
 <head>
   <title>Suyogya Poudel</title>
-  <meta charset="utf-8">
+  <!--<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="hobbies.css" type="text/css">
+  <link rel="stylesheet" href="home.css" type="text/css">-->
+
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hobbies.css" type="text/css">
+  
 </head>
 <body>
-  <button onclick="topFunction()" id="toTop" title="Back to top">Back to top</button>
+  <button onclick="topFunction()" id="toTop" title="Back to top"><strong>Back to Top</strong></button>
 
-<nav class="navbar navbar-inverse" id="nav">
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-light navbar-custom">
+  <a class="navbar-brand" href="home.html"><img id="myLogo" src="Pic.jpg" width="40" height="100%" class="d-inline-block align-top" alt="" loading="lazy">My Personal Website</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><strong>Hobbies</strong><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="future.html">Future</a>
+      </li>
+      <!--<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>-->
+  </div>
+</nav>
+
+<!--<nav class="navbar navbar-default navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -21,35 +73,36 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="home.html">My Personal Website</a>
+      <a class="navbar-brand" href="#">My Personal Website</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="home.html">Home</a></li>
-        <!--<li class="dropdown">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hobbies<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Hobbies</a></li>
             <li><a href="#">Past and Future</a></li>
             <li><a href="#">Dream</a></li>
           </ul>
-        </li>-->
-        <li class="active"><a href="#">Hobbies</a></li>
+        </li>
+        <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="future.html">Future</a></li>
       </ul>
-      <!--<ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right">
+        <li><p id="date"> </p></li>
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>-->
+      </ul>
     </div>
   </div>
-</nav>
+</nav>-->
   
 <div class="container">
   <!--<h3>About me</h3>
   <p>Hi, my name is Suyogya Poudel. I was born in Nepal and moved and moved to the U.S. when I was 11.</p>
 </div>-->
-    <div class="row">
+    
         <div id="main-content" id="Top">
           <section id="jumbotron"><h2 id="aboutMe"><strong>Hobbies</strong></h2>
 
@@ -71,8 +124,8 @@
             <img id="pictures" src="https://res.cloudinary.com/fen-learning/image/upload/c_limit,w_508,h_282/infopls_images/images/mnepal.gif" width="100%" height="200px">
             <p>Nepal is located in Asia. A small country known for the tallest mountain the world, Mount Everest. It also has 8 of the top 10 tallest mountains in the world.</p>
           </div>-->
-        <div id="hobbies">
-        <div class="col-md-3 col-xs-6" id="book"><!--col-xs-6-->
+          <div class="row">
+        <div class="col-md-3 col-6" id="book"><!--col-xs-6-->
           <h3 class="book"><strong>Favorite Book Series</strong></h3>
           <!--<img id="pictures" src="https://www.skimag.com/.image/t_share/MTU1ODI2ODU4NzEyMTE0NjMy/snowmassearlysummerdusk_web.jpg" width="100%" height="200px">-->
           <p class="books">I have read dozens of books but some of my most memorable book series are:
@@ -88,7 +141,7 @@
           </p>
           
         </div>
-        <div class="col-md-3 col-xs-6" id="webcomic"><!--col-xs-6-->
+        <div class="col-md-3 col-6" id="webcomic"><!--col-xs-6-->
           <h3 id="manga"><strong>Favorite Manga/Webcomic</strong></h3>
           <!--<img id="pictures" src="https://cdn-img.instyle.com/sites/default/files/styles/1600xflex/public/images/2016/08/082616-aspen-colorado.jpg?itok=lq7RW3gS" width="100%" height="200px">-->
           <p class="manga">I got into reading Manga in 2018 but since than I have read so many that I have lost count. Some of my favorites are:</p>
@@ -104,7 +157,7 @@
               <li>Soul Cartel</li>
             </ul>
         </div>
-        <div class="col-md-3 col-xs-6" id="anime"><!--col-xs-6-->
+        <div class="col-md-3 col-6" id="anime"><!--col-xs-6-->
           <h3 class="animes"><strong>Favorite Animes</strong></h3>
           <!--<img id="pictures" src="https://cdn-img.instyle.com/sites/default/files/styles/1600xflex/public/images/2016/08/082616-aspen-colorado.jpg?itok=lq7RW3gS" width="100%" height="200px">-->
           <p class="anime">I have watched hundreds of anime but some of my favorite ones are:</p>
@@ -121,7 +174,7 @@
 
             </ul>
         </div>
-        <div class="col-md-3 col-xs-6" id="drama"><!--col-xs-6-->
+        <div class="col-md-3 col-6" id="drama"><!--col-xs-6-->
           <h3 id="kDrama"><strong>Favorite Korean Dramas</strong></h3>
           <!--<img id="pictures" src="https://assets.vogue.com/photos/5a3e83798cbd47509b3317bd/master/pass/00-promo-aspen-50th-anniversary.jpg" width="100%" height="200px">-->
           <p class="kDrama">I never thought I would watch Korean Drama. I knew it was big amongst my friends but that didn't influence my decision to start watching them. My brother got into watching Korean Drama and he told me watch one and from that point on, I have watched a few. Some of my favorites are:</p>
@@ -134,7 +187,7 @@
               <li>Reply 1988</li>
             </ul>
       </div>
-      <div class="col-md-3 col-xs-6" id="Nepali"><!--col-xs-6-->
+      <div class="col-md-3 col-6" id="Nepali"><!--col-xs-6-->
           <h3 id="nepali"><strong>Favorite movie from Nepali Cinema</strong></h3>
           <!--<img id="pictures" src="https://www.aspenchamber.org/sites/default/files/images/downtown.spring.Aspen.jpeg" width="100%" height="200px">-->
           <p class="nepali">Since I was born in Nepal, I have watched far more movies and shows from Nepal. Some of my favorites are:</p>
@@ -144,11 +197,11 @@
               <li>Kabaddi</li>
               <li>Kabaddi Kabaddi</li>
               <li>Kabbaddi Kabaddi Kabaddi</li>
-              <li>Meri Bassai(a show)</li>
-              <li>Risaani Maaf(a show)</li>
+              <li>Meri Bassai(TV Show)</li>
+              <li>Risaani Maaf(TV Show)</li>
             </ul>
         </div>
-        <div class="col-md-3 col-xs-6" id="Indian"><!--col-xs-6-->
+        <div class="col-md-3 col-6" id="Indian"><!--col-xs-6-->
           <h3 id="indian"><strong>Favorite movie from Indian Cinema</strong></h3>
           <!--<img id="pictures" src="https://www.aspenchamber.org/sites/default/files/images/downtown.spring.Aspen.jpeg" width="100%" height="200px">-->
           <p class="indian">Nepali and Hindi are very similar, in terms of their alphabets and sounds. I don't know since when I could understand hindi but I have watched my fair share of movies and shows from Indian Cinema. Some of my favorites are: </p>
@@ -158,11 +211,11 @@
               <li>Kal Ho Naa Ho</li>
               <li>Housefull</li>
               <li>Pyaar Ka Punchnama</li>
-              <li>C.I.D(a show)</li>
-              <li>Adaalat(a show)</li>
+              <li>C.I.D(TV Show)</li>
+              <li>Adaalat(TV Show)</li>
             </ul>
         </div>
-        <div class="col-md-3 col-xs-6" id="game"><!--col-xs-6-->
+        <div class="col-md-3 col-6" id="game"><!--col-xs-6-->
           <h3 id="games"><strong>Video Games</strong></h3>
           <!--<img id="pictures" src="https://www.aspenchamber.org/sites/default/files/images/downtown.spring.Aspen.jpeg" width="100%" height="200px">-->
           <p class="games">I only started playing video games after I moved to the U.S. because my family didn't have internet or computers in Nepal. I haven't played many video games but some of my favorites are: </p>
@@ -173,7 +226,7 @@
               <li>Fifa 2016</li>
             </ul>
         </div> 
-        <div class="col-md-3 col-xs-6" id="sport"><!--col-xs-6-->
+        <div class="col-md-3 col-6" id="sport"><!--col-xs-6-->
           <h3 id="sports"><strong>Sports</strong></h3>
           <!--<img id="pictures" src="https://www.aspenchamber.org/sites/default/files/images/downtown.spring.Aspen.jpeg" width="100%" height="200px">-->
           <p class="sports">I enjoy playing all the sports out there except football and I have never played baseball. The list below is ordered by how much I enjoy the sport.</p>
@@ -191,7 +244,6 @@
               <li>Uno</li>
               <li>Battleship</li>
         </div>
-      </div>
       
 </div> 
 </div>

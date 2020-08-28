@@ -1,24 +1,45 @@
 body
-{background-color: black;
+{
   /*The background image was taken by my brother, Sushanta Poudel*/
   background-image: url("flamingo.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  color: white;
+  color: lightgray;
+  text-shadow: 2px 1px black;
 
 }
-#nav
+#myLogo
 {
-  background-color: transparent;
-  color: black;
-  border: none;
+  border-radius: 50%;
+}
+
+/*.active {
+  font-size: 15px;
+  color: #fff;
   text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
-.active
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 20px #fff, 0 0 30px #c41414, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 60px #e60073, 0 0 60px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 30px #fff, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6, 0 0 900px #ff4da6;
+  }
+}*/
+
+.navbar-custom 
 {
-  opacity: .5;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  text-shadow: 1px 1px black;
 }
+
 .container-fluid
 {
 }
@@ -29,7 +50,7 @@ ul
 }
 li
 {
-  font-size: 12px;
+  font-size: 15px;
 }
 #main-content
 {
@@ -49,7 +70,8 @@ li
 
 #logo
 {
-  margin: 1%;
+  margin-top: 2%;
+  margin-right: 3%;
   width: 3%;
   opacity: .7;
 

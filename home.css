@@ -11,14 +11,34 @@ body
 
 .navbar-custom 
 { 
-  color: white;
-  background-color: transparent;
-  border-color: transparent;
+  color: white !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  text-shadow: 1px 1px black;
 }
-.active
+#myLogo
 {
-  opacity: .8;
+  border-radius: 50%;
 }
+
+/*.active {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 20px #fff, 0 0 30px #c41414, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 60px #e60073, 0 0 60px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 30px #fff, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6, 0 0 900px #ff4da6;
+  }
+}*/
 
 #date
 {
@@ -31,7 +51,7 @@ ul
 }
 li
 {
-  font-size: 12px;
+  font-size: 15px;
   color: white;
 }
 #main-content
@@ -51,6 +71,10 @@ li
 	font-size: 20px;
 	margin-top: 20px;
   padding: 10px;
+}
+p
+{
+  font-size: 15px;
 }
 #cultural
 {
@@ -81,10 +105,10 @@ li
 }
 #logo
 {
-  margin: 1%;
+  margin-top: 2%;
+  margin-right: 3%;
   width: 3%;
   opacity: .7;
-
 
 }
 #logo:hover
@@ -105,7 +129,7 @@ footer
   text-align: center;
   background-color: transparent;
   position: absolute;
-  padding: 5px;
+  padding: .5%;
 }
 
 .foot
@@ -235,10 +259,11 @@ P
   position: absolute;
   top: 15px;
   right: 35px;
-  color: white;
+  color: red;
+  text-shadow: white;
   font-size: 40px;
   font-weight: bold;
-  transition: 0.3s;
+  transition: .1s;
 }
 
 .close:hover,
