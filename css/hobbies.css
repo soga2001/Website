@@ -1,13 +1,12 @@
 body
 {
+	background-color: black;
   /*The background image was taken by my brother, Sushanta Poudel*/
-  background-image: url("flamingo.jpg");
+  background-image: url("../img/butterfly.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  color: lightgray;
-  text-shadow: 2px 1px black;
-
+	color: white;
 }
 #myLogo
 {
@@ -33,6 +32,28 @@ body
   }
 }*/
 
+h3, h2
+{
+	font-family: Comic Sans MS, curve , sans-serif;
+  font-size: 20px;
+  color: relative;
+}
+p
+{
+	font-family: Comic Sans MS, curve , sans-serif;
+  font-size: 17px;
+}
+ul
+{
+	font-size: 20px;
+	font-family: Comic Sans MS, curve , sans-serif;
+}
+li, ol
+{
+  font-size: 15px;
+  font-family: Comic Sans MS, curve , sans-serif;
+}
+
 .navbar-custom 
 {
   background-color: transparent !important;
@@ -40,44 +61,105 @@ body
   text-shadow: 1px 1px black;
 }
 
-.container-fluid
-{
-}
-ul
-{
-  font-size: 20px;
-  font-family: Comic Sans MS, curve , sans-serif;
-}
-li
-{
-  font-size: 15px;
-}
 #main-content
 {
-	/*background-image: url("galaxy.jpg");*/
-	margin-bottom: 200px;
+	background-color: transparent;
+  padding: 10px;
+  font-weight: bold;
+}
+.row
+{
+  background-color: transparent;
 }
 #aboutMe
 {
 	font-size: 50px;
-	text-align: center;
 }
-#first
+#par
 {
 	font-size: 20px;
-	margin-top: 20px;
+	margin: 10px;
+}
+.myPicture
+{
+	height: 100%;
+	display: fixed;
+	margin-left: 3%;
+	width: 47%;
+	border: 3px double white;
+}
+.balls
+{
+  display: fixed;
+  margin-right: 1%;
+  height: 100%;
+  width: 41%;
+  border: 3px double white;
 }
 
-#logo
+#aboutMe
+{
+	text-align: center;
+}
+
+#book
+{
+
+  height: relative;
+
+}
+
+#webcomic
+{
+  height: relative;
+
+}
+
+#anime
+{
+
+  height: relative;
+
+}
+#drama
+{
+  height: relative;
+}
+
+#Nepali
+{
+  height: relative;
+}
+
+#Indian
+{
+  height: relative;
+
+}
+
+#game
+{
+  height: relative;
+}
+
+#sport
+{
+  height: relative;
+}
+
+
+
+.logo
 {
   margin-top: 2%;
   margin-right: 3%;
   width: 3%;
   opacity: .7;
+  border-radius: 50%;
 
 }
 
-#logo:hover
+.logo:hover
 {
   opacity: 1;
 }
@@ -94,7 +176,8 @@ footer
   margin-top: 200px;
   text-align: center;
   background-color: transparent;
-
+  position: absolute;
+  padding: .5%;
 }
 
 .foot
@@ -108,28 +191,7 @@ footer
   padding: .5%;
 }
 
-.myPicture
-{
-	/*height: 100%;
-	margin-left: 30px;
-	margin-right: 30px;*/
-	width: 100%;
-	border: 3px solid black;
-}
 
-#pictures
-{
-	border: 3px solid black;
-	display: block;
-	position: relative;
-	/*width: 50%;
-	margin-left: auto;
-	margin-right: auto;*/
-}
-p
-{
-	text-indent: 3.0em;
-}
 #toTop {
   color: white;
   display: none;
@@ -147,4 +209,8 @@ p
 }
 #toTop:hover {
   opacity: .7;
-}	
+}
+.container
+{
+	padding-bottom: 1%;
+}

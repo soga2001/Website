@@ -1,7 +1,7 @@
 body
 {
   /*Background Picture was taken by my brother*/
-  background-image: url("sunrise.jpg");
+  background-image: url("../img/sunrise.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -15,10 +15,6 @@ body
   background-color: transparent !important;
   border-color: transparent !important;
   text-shadow: 1px 1px black;
-}
-#myLogo
-{
-  border-radius: 50%;
 }
 
 /*.active {
@@ -84,10 +80,7 @@ p
 }
 
 #location
-{
-  /*background-image: url("butterfly.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;*/
+{ 
   color: white;
   height: relative;
 }
@@ -103,15 +96,17 @@ p
   color: white;
 
 }
-#logo
+.logo
 {
   margin-top: 2%;
   margin-right: 3%;
   width: 3%;
   opacity: .7;
+  border-radius: 50%;
 
 }
-#logo:hover
+
+.logo:hover
 {
   opacity: 1;
 }

@@ -1,16 +1,13 @@
 body
 {
-	background-color: black;
   /*The background image was taken by my brother, Sushanta Poudel*/
-  background-image: url("butterfly.jpg");
+  background-image: url("../img/flamingo.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-	color: white;
-}
-#myLogo
-{
-  border-radius: 50%;
+  color: lightgray;
+  text-shadow: 2px 1px black;
+
 }
 
 /*.active {
@@ -31,29 +28,7 @@ body
     text-shadow: 0 0 30px #fff, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6, 0 0 900px #ff4da6;
   }
 }*/
-
-h3, h2
-{
-	font-family: Comic Sans MS, curve , sans-serif;
-  font-size: 20px;
-  color: relative;
-}
-p
-{
-	font-family: Comic Sans MS, curve , sans-serif;
-  font-size: 17px;
-}
-ul
-{
-	font-size: 20px;
-	font-family: Comic Sans MS, curve , sans-serif;
-}
-li, ol
-{
-  font-size: 15px;
-  font-family: Comic Sans MS, curve , sans-serif;
-}
-
+ 
 .navbar-custom 
 {
   background-color: transparent !important;
@@ -61,103 +36,45 @@ li, ol
   text-shadow: 1px 1px black;
 }
 
+.container-fluid
+{
+}
+ul
+{
+  font-size: 20px;
+  font-family: Comic Sans MS, curve , sans-serif;
+}
+li
+{
+  font-size: 15px;
+}
 #main-content
 {
-	background-color: transparent;
-  padding: 10px;
-  font-weight: bold;
-}
-.row
-{
-  background-color: transparent;
+	/*background-image: url("galaxy.jpg");*/
+	margin-bottom: 200px;
 }
 #aboutMe
 {
 	font-size: 50px;
-}
-#par
-{
-	font-size: 20px;
-	margin: 10px;
-}
-.myPicture
-{
-	height: 100%;
-	display: fixed;
-	margin-left: 3%;
-	width: 47%;
-	border: 3px double white;
-}
-.balls
-{
-  display: fixed;
-  margin-right: 1%;
-  height: 100%;
-  width: 41%;
-  border: 3px double white;
-}
-
-#aboutMe
-{
 	text-align: center;
 }
-
-#book
+#first
 {
-
-  height: relative;
-
+	font-size: 20px;
+	margin-top: 20px;
 }
 
-#webcomic
-{
-  height: relative;
-
-}
-
-#anime
-{
-
-  height: relative;
-
-}
-#drama
-{
-  height: relative;
-}
-
-#Nepali
-{
-  height: relative;
-}
-
-#Indian
-{
-  height: relative;
-
-}
-
-#game
-{
-  height: relative;
-}
-
-#sport
-{
-  height: relative;
-}
-
-
-
-#logo
+.logo
 {
   margin-top: 2%;
   margin-right: 3%;
   width: 3%;
   opacity: .7;
+  border-radius: 50%;
 
 }
-#logo:hover
+
+.logo:hover
 {
   opacity: 1;
 }
@@ -174,8 +91,7 @@ footer
   margin-top: 200px;
   text-align: center;
   background-color: transparent;
-  position: absolute;
-  padding: .5%;
+
 }
 
 .foot
@@ -189,7 +105,28 @@ footer
   padding: .5%;
 }
 
+.myPicture
+{
+	/*height: 100%;
+	margin-left: 30px;
+	margin-right: 30px;*/
+	width: 100%;
+	border: 3px solid black;
+}
 
+#pictures
+{
+	border: 3px solid black;
+	display: block;
+	position: relative;
+	/*width: 50%;
+	margin-left: auto;
+	margin-right: auto;*/
+}
+p
+{
+	text-indent: 3.0em;
+}
 #toTop {
   color: white;
   display: none;
@@ -207,8 +144,4 @@ footer
 }
 #toTop:hover {
   opacity: .7;
-}
-.container
-{
-	padding-bottom: 1%;
-}
+}	
